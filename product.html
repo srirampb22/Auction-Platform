@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="title">PRODUCT LIST</div>
+            <div class="listProduct"></div>
+        </div>
+        <script>
+            let products = null;
+            fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                console.log(products);
+                addDataToHTML();
+            })
+            let listProduct = document.querySelector('.listProduct');
+            function addDataToHTML(){
+                products.forEach()
+            }
+        </script>
+    </body>
+</html>
